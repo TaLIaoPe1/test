@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNMB</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="รอคนออกเเบบ">
+          </div>
+          <ul class="navbar-menu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./activities.html">Activities</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./souvenir.html">Souvenir</a></li>
+          </ul>
+      </nav>
+      
+    <div class="slider">
+      <img src="img/voyage.jpg" alt="Concert" class="active">
+      <img src="img/march.jpg" alt="Practice Session">
+      <img src="img/morning.jpg" alt="Performance">
+    
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    
+      <div class="dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+    <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll(".slider img");
+      const dots = document.querySelectorAll(".dot");
+      const prevButton = document.querySelector(".prev");
+      const nextButton = document.querySelector(".next");
+    
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+          dots[i].classList.toggle("active", i === index);
+        });
+      }
+    
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+    
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      }
+    
+      function currentSlide(index) {
+        currentIndex = index;
+        showSlide(currentIndex);
+      }
+    
+      prevButton.addEventListener("click", prevSlide);
+      nextButton.addEventListener("click", nextSlide);
+    
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => currentSlide(index));
+      });
+    
+      // เปลี่ยนรูปอัตโนมัติทุก 3 วินาที
+      setInterval(nextSlide, 15000);
+    </script>
+
+ <!-- Upcoming Events Section -->
+ <section class="upcoming">
+  <h2>ข่าวสารและกิจกรรม</h2>
+  <div class="card-container">
+      <button class="prev-btn">&#10094;</button> <!-- ปุ่มย้อนกลับ -->
+      <div class="card-wrapper">
+          <div class="card">
+              <img src="img/voyage poster.jpg" alt="กิจกรรม 1">
+              <div class="card-content">
+                  <h3>Voyage</h3>
+                  <p>20/01/2024 ณ หอประชุมเฉลิมพระเกียรติ โรงเรียนราชวินิตมัธยม</p>
+                  <a href="https://www.facebook.com/photo/?fbid=904223055041803&set=a.904223198375122" class="read-more">ดูเพิ่มเติม</a>
+              </div>
+          </div>
+          <div class="card">
+              <img src="img/event2.jpg" alt="กิจกรรม 2">
+              <div class="card-content">
+                  <h3>##########</h3>
+                  <p>################</p>
+                  <a href="#" class="read-more">ดูเพิ่มเติม</a>
+              </div>
+          </div>
+          <div class="card">
+              <img src="img/event3.jpg" alt="กิจกรรม 3">
+              <div class="card-content">
+                  <h3>##########</h3>
+                  <p>################</p>
+                  <a href="#" class="read-more">ดูเพิ่มเติม</a>
+              </div>
+          </div>
+          <div class="card">
+              <img src="img/event4.jpg" alt="กิจกรรม 4">
+              <div class="card-content">
+                  <h3>##########</h3>
+                  <p>################</p>
+                  <a href="#" class="read-more">ดูเพิ่มเติม</a>
+              </div>
+          </div>
+      </div>
+      <button class="next-btn">&#10095;</button> <!-- ปุ่มถัดไป -->
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="logo.png" alt="รอคนออกเเบบ">
+            <p>181 ถ. พิษณุโลก แขวงสวนจิตรลดา เขตดุสิต กรุงเทพมหานคร 10300</p>
+        </div>
+        <div class="footer-info">
+            <p>โทร: 092 490 0605</p>
+            <p>gmail: symphonicrnm@gmail.com</p>
+        </div>
+        <div class="footer-contact">
+            <h3>ติดตามเรา</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/p/วงโยธวาทิตราชวินิต-มัธยม-100063623498272/?_rdr">facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Youtube</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </section>
+</body>
+</html>

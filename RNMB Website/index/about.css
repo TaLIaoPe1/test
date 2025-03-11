@@ -1,0 +1,119 @@
+/* ตั้งค่าพื้นฐาน */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    background-color: #FFFFFF; /* สีพื้นหลังขาว */
+    color: #000080; /* สีกรมท่า */
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .navbar-logo img {
+    height: 60px;
+    justify-content: left;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #000080;
+    font-size: 19px;
+    font-weight: 550;
+    padding: 12px 15px;
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .navbar-menu li a:hover {
+    background: #000080;
+    color: white;
+  }
+
+/* หัวข้อหน้า */
+.page-header {
+  text-align: center;
+  padding: 50px 40px;
+  background-color: #f8f9fa;
+}
+
+.page-header h1 {
+  background-color: #000044;
+  color: #FFD700;
+  text-align: center;
+  padding: 30px 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* เนื้อหาหลัก */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 20px;
+}
+
+/* ส่วนเนื้อหาและรูปภาพ */
+.about-content {
+  display: flex;
+  align-items: center;
+  max-width: 2000px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* รูปภาพ */
+.about-content img {
+  width: 50%;
+  object-fit: cover;
+}
+
+/* ข้อความ */
+.text-content {
+  padding: 30px;
+  width: 50%;
+}
+
+.text-content h2 {
+  color: #000044;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* หมายเหตุ */
+.note {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+  margin-top: 20px;
+}

@@ -1,0 +1,178 @@
+/* ตั้งค่าพื้นฐาน */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    background-color: #FFFFFF; /* สีพื้นหลังขาว */
+    color: #000080; /* สีกรมท่า */
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .navbar-logo img {
+    height: 60px;
+    justify-content: left;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #000080;
+    font-size: 19px;
+    font-weight: 550;
+    padding: 12px 15px;
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .navbar-menu li a:hover {
+    background: #000080;
+    color: white;
+  }
+
+/* หัวข้อหน้า */
+.page-header {
+  text-align: center;
+  padding: 50px 40px;
+  background-color: #f8f9fa;
+}
+
+.page-header h1 {
+  background-color: #000044;
+  color: #FFD700;
+  text-align: center;
+  padding: 30px 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* คอนเทนเนอร์หลัก */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+/* จัดรูปแบบเนื้อหา */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 30px;
+}
+
+/* ข้อมูลการติดต่อ */
+.contact-info {
+  width: 45%;
+}
+
+.contact-info h2 {
+  color: #000044;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* ลิงก์ */
+.contact-info a {
+  color: #000088;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ไอคอนโซเชียล */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+.facebook { background: #3b5998; }
+.instagram { background: #e4405f; }
+.youtube { background: #ff0000; }
+
+.social:hover {
+  opacity: 0.8;
+}
+
+/* แผนที่ */
+.contact-map {
+  width: 45%;
+}
+
+.contact-map h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #000044;
+}
+
+/* Footer */
+.footer {
+  background-color: #000044;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-contact h3 {
+  margin-bottom: 10px;
+}

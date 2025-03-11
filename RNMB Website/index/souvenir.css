@@ -1,0 +1,152 @@
+/* ตั้งค่าพื้นฐาน */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    background-color: #FFFFFF; /* สีพื้นหลังขาว */
+    color: #000080; /* สีกรมท่า */
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .navbar-logo img {
+    height: 60px;
+    justify-content: left;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #000080;
+    font-size: 19px;
+    font-weight: 550;
+    padding: 12px 15px;
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .navbar-menu li a:hover {
+    background: #000080;
+    color: white;
+  }
+
+  /* ตั้งค่าพื้นฐาน */
+body {
+  font-family: 'Prompt', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000044;
+}
+
+/* หัวข้อหน้า */
+.page-header {
+  text-align: center;
+  padding: 50px 40px;
+  background-color: #f8f9fa;
+}
+
+.page-header h1 {
+  background-color: #000044;
+  color: #FFD700;
+  text-align: center;
+  padding: 30px 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+/* คอนเทนเนอร์สินค้า */
+.souvenir-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* กล่องสินค้า */
+.product {
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+/* รูปภาพสินค้า */
+.product img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ชื่อสินค้า */
+.product h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #000044;
+}
+
+/* คำอธิบาย */
+.product p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* ราคา */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #D40000;
+}
+
+/* ปุ่มสั่งซื้อ */
+.buy-btn {
+  background: #FFD700;
+  color: #000044;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #ffcc00;
+}
+
+/* Footer */
+.footer {
+  background-color: #000044;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
